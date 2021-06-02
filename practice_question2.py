@@ -27,8 +27,9 @@ def find_closest_element(arr, K, X):
         for j in range(K, 0):
             print(j)
             result.append(arr[j])
-    print(result)
-    return result
+    else:
+       b=arr.index(int(X))
+       for z in range(b-1, )
 
 
 find_closest_element([1,2,3,4,5], 4, 6)
