@@ -1,27 +1,16 @@
-# for i in range(97,123):
-#     print(chr(i), end=" ")
+def find_sum_of_two(A, val):
+  found_values = set()
+  for a in A:
+    if val - a in found_values:
+      return True
 
-# for i in range(65,91):
-#     print(chr(i), end=" ")
+    found_values.add(a)
+    
+  return False
 
-def hash_test(keyvalue):
-	try:
-		if type(keyvalue) is int:
-			return keyvalue  % 2069
-		elif type(keyvalue) is str:
-			lst = []
-			for i in keyvalue:
-				lst.append(ord(i))
-			return sum(lst) % 2069
-		else:
-			print("keyvalue is not a str or int")			
-	except NameError:
-		raise NameError
-	
-# print(ord("h"))
-# for i in "hi":
-# 	print(ord(i))
-print(hash_test("hi"))
-print(hash_test("21"))
-print(hash_test(10))
-print(hash_test(5.5))
+v = [5, 7, 1, 2, 8, 4, 3]
+test = [3, 20, 1, 2, 7]
+
+for i in range(len(test)):
+  output = find_sum_of_two(v, test[i])
+  print("find_sum_of_two(v, " + str(test[i]) + ") = " + str(output))

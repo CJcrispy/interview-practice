@@ -12,24 +12,44 @@ Output: [1,2,3,4]
 Input: [2, 4, 5, 6, 9], k = 3, x = 6
 Output: [4, 5, 6]
 '''
-import heapq as hq
 
-def find_closest_element(arr, K, X):
-    # TODO: Write your code here
-    result = []
-    y = (len(arr))
+def binary(nums, x):
+    start = 0
+    end = len(nums) - 1
+
+    while start <= end:
+        mid = start + ((end - start) // 2)
+        if nums[mid] < x:
+            start = mid + 1
+        elif nums[mid] > x:
+            end = mid - 1
+        else:
+            return mid
+    return start
+
+
+def k_close(nums, x, k):
+    '''
+    First, use the binary search algorithm to find the insertion point 
+    (The insertion point is the point where the integer 
+    x can be placed or inserted within the sorted list). 
     
-    if X <= arr[0]:
-        for j in K:
-            print(j)
-            result.append(arr[j])
-    elif X > arr[y - 1]:
-        for j in range(K, 0):
-            print(j)
-            result.append(arr[j])
-    else:
-       b=arr.index(int(X))
-       for z in range(b-1, )
+    The elements before this point are smaller, 
+    while the elements after it are greater.
+    '''
+    no = binary(nums, x)
+    '''
+    Then, compare the elements around this point to find the k closest numbers.
+    '''
+    lhs = no - 1
+    rhs = no
+    while k > 0:
+        if lhs < 0 or (rhs < len(nums) and abs(nums[lhs] - x) > abs(nums[rhs] - x)):
+            rhs = rhs + 1
+        else:
+            lhs = lhs - 1
+        k = k - 1
+    return nums[lhs + 1: rhs]
 
-
-find_closest_element([1,2,3,4,5], 4, 6)
+print(k_close([1,2,3,4,5], 4, 3))
+print(k_close([2, 4, 5, 6, 9], 3, 3))
