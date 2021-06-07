@@ -43,16 +43,16 @@ a constant factor can be ignored in asymptotic notation
 - There is an order to functions used when analyzing algorithms using asymptotic notation
   if a and b are constants a < b, then a run time of Θ(n^a) grows more slowly than a run time of Θ(n^b)
 
-functions in Asymptotic notation(slowest - fastest)
-    - Θ(1)
-    - Θ(log(2)n)
-    - Θ(n)
-    - Θ(n*log(2)n)
-    - Θ(n^2)
-    - Θ(n^2*log(2)n)
-    - Θ(n^3)
-    - Θ(2^n)
-    - Θ(n!)
+    functions in Asymptotic notation(slowest - fastest)
+        - Θ(1)
+        - Θ(log(2)n)
+        - Θ(n)
+        - Θ(n*log(2)n)
+        - Θ(n^2)
+        - Θ(n^2*log(2)n)
+        - Θ(n^3)
+        - Θ(2^n)
+        - Θ(n!)
 - note: an exponential function a^n, where a > 1, grows faster than any polynomial function n^b, where b is any constant
 
 ###### big - Θ notation (Big Theta)
