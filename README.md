@@ -12,13 +12,13 @@ of a particular programming language or hardware
 ###### Binary Search
 - an efficient algorithm for finding an item from a sorted list of items
 
-ex: Searching an item in a list by name
-    1. min = 0 and max = n-1
-    2. compute the average rounded down
-    3. if array[guess] = target, then stop
-    4. if guess is too low set min = guess + 1
-    5. if guess is too high set max = guess - 1
-    6. step 2
+    ex: Searching an item in a list by name
+        1. min = 0 and max = n-1
+        2. compute the average rounded down
+        3. if array[guess] = target, then stop
+        4. if guess is too low set min = guess + 1
+        5. if guess is too high set max = guess - 1
+        6. step 2
 
 - runtime for binary search: log2(n) + 1 (for most guesses)
 
@@ -44,15 +44,15 @@ a constant factor can be ignored in asymptotic notation
   if a and b are constants a < b, then a run time of Θ(n^a) grows more slowly than a run time of Θ(n^b)
 
 functions in Asymptotic notation(slowest - fastest)
- - Θ(1)
- - Θ(log(2)n)
- - Θ(n)
- - Θ(n*log(2)n)
- - Θ(n^2)
- - Θ(n^2*log(2)n)
- - Θ(n^3)
- - Θ(2^n)
- - Θ(n!)
+    - Θ(1)
+    - Θ(log(2)n)
+    - Θ(n)
+    - Θ(n*log(2)n)
+    - Θ(n^2)
+    - Θ(n^2*log(2)n)
+    - Θ(n^3)
+    - Θ(2^n)
+    - Θ(n!)
 - note: an exponential function a^n, where a > 1, grows faster than any polynomial function n^b, where b is any constant
 
 ###### big - Θ notation (Big Theta)
@@ -80,10 +80,10 @@ functions in Asymptotic notation(slowest - fastest)
 
 computing summations from 1 to n
 ex: 
- 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1
- (8+1) + (7+2) + (6+3) + (5+4) = 9 + 9 + 9 + 9
-                               = 4 * 9
-                               = 36
+    8 + 7 + 6 + 5 + 4 + 3 + 2 + 1
+    (8+1) + (7+2) + (6+3) + (5+4) = 9 + 9 + 9 + 9
+                                    = 4 * 9
+                                    = 36
                                
 1. Add the smallest and largest number
 2. Multiply by the number of pairs
@@ -96,17 +96,17 @@ ex:
  Asymptotic run time for selection sort
  
  The total run time has 3 parts
-  1. indexOfMinimum
-   - Each individual iteration of the loop takes constant time (n). 
-   The number of iterations of this loop is n in the first call, then n-1, then n-2 and so on
-   - runtime: Θ(n^2)
-  2. swap
-   - makes n calls and each call takes constant time
-   - runtime: Θ(n)
-  3. remainder of the loop
-   - testing an incrementing the loop and calling indexOfMinimum & swap
-   so that takes constant time for n iterations
-   - runtime: Θ(n)
+    1. indexOfMinimum
+    - Each individual iteration of the loop takes constant time (n). 
+    The number of iterations of this loop is n in the first call, then n-1, then n-2 and so on
+    - runtime: Θ(n^2)
+    2. swap
+    - makes n calls and each call takes constant time
+    - runtime: Θ(n)
+    3. remainder of the loop
+    - testing an incrementing the loop and calling indexOfMinimum & swap
+    so that takes constant time for n iterations
+    - runtime: Θ(n)
 
   Total time: n^2/2 + n/2
   Runtime for selection sort: Θ(n^2)
@@ -130,13 +130,13 @@ run time:
 - best case: Θ(n*lg*n)
 - average case: Θ(n*lg*n)
 
- Divide and conquer(Mathematics)
- - breaks a problem into subproblems that are similar to the original problem
- - recusrively solves the subproblems, finally combines the solutions to solve the orginial problem
+    Divide and conquer(Mathematics)
+        - breaks a problem into subproblems that are similar to the original problem
+        - recusrively solves the subproblems, finally combines the solutions to solve the orginial problem
 
- 1. Divide, the problem into a number of subproblems that are smaller instances of the same problem
- 2. Conquer, the subproblems by solving them recursively. If they are small enough, solve the subproblems as base cases
- 3. Combine, the solutions to the subproblems into the solution for the original problem
+        1. Divide, the problem into a number of subproblems that are smaller instances of the same problem
+        2. Conquer, the subproblems by solving them recursively. If they are small enough, solve the subproblems as base cases
+        3. Combine, the solutions to the subproblems into the solution for the original problem
 
 How merge sort uses Divide and conquer
 1. Divide, by finding the number q of the position midqay between p and r. 
