@@ -51,5 +51,5 @@ def k_close(nums, x, k):
         k = k - 1
     return nums[lhs + 1: rhs]
 
-print(k_close([1,2,3,4,5], 4, 3))
-print(k_close([2, 4, 5, 6, 9], 3, 3))
+# print(k_close([1,2,3,4,5], 4, 3))
+print(k_close([2, 4, 4, 5, 6, 9], 3, 3))
