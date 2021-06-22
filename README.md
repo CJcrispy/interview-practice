@@ -149,3 +149,27 @@ That is, recursively sort the subarray[p..q] and [q+1...r]
 
 3. Combine, by merging the sorted subarrays back into the single sorted subarray [p...r]
  - merge time: Θ(n)
+
+
+###### Quick sort
+runtime:
+- worst case: Θ(n^2)
+- best case: Θ(n*lg*n)
+- average case: Θ(n*lg*n)
+
+How quick sort uses divide and conquer
+1. Divide, by choosing any element in the sub array [p...r] aka the pivot. 
+Rearrange the elements in the array[p...r] that are <= pivot are to its left and all elements >= pivot are to its right aka partioning.
+
+2. Conquer, by recursively sorting the subarrays array[p...q-1] (left elements) and array[q+1...r] (right elements)
+
+3. Combine, by doing nothing. The array is sorted
+
+## Red/Black Tree
+-  a self-balancing Binary Search Tree (BST) where every node follows the following rules:
+    1. Every node has a color either red or black
+    2. Root of tree is always black
+    3. There are no two adjacent red nodes (A red node cannot have have a red parent or a red child)
+    4. Every path from a node (including root) to any of its descendant NULL node has the same number of black nodes
+
+- Most of the BST operations (search, max, min, insert, delete, etc)
