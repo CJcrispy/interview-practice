@@ -192,3 +192,19 @@ an upper bound of O(log(n)) for all these operations
     - black_height >= h/2
 
 - Every Red-Black tree with *n* node has height <= 2 * log2(n+1)
+    1. let K be the minimum # of nodes on all root to NULL paths, then n >= 2^k-1
+        - Also written as K <= log2(n+1)
+    2. a red-black tree with n nodes, there is a root to leaf path with at most 
+    log2(n+1) black nodes
+    3. The number of black nodes in a red-black tree is at least n/2 (n = # of nodes)
+
+###### insert
+Tools used to do balancing
+1. Recoloring
+    - Recoloring is the change in colour of the node 
+        - i.e. if it is red then change it to black and vice versa. It must be noted that the colour of the NULL node is always black
+2. Rotation
+
+- The algorithms has mainly two case depending upon the color of the uncle node
+    - if uncle is red, we do recoloring
+    - if uncle is black, do rotations and/or recoloring 
