@@ -208,3 +208,44 @@ Tools used to do balancing
 - The algorithms has mainly two case depending upon the color of the uncle node
     - if uncle is red, we do recoloring
     - if uncle is black, do rotations and/or recoloring 
+
+NOTE: Color of a null is considered black
+
+NOTE:
+    - The left subtree of a node contains only nodes with keys lesser than the node's key
+    - The right subtree contains only the greater
+    - The left & right subtree must also be a binary search tree
+    - No duplicate nodes
+
+Red/Black insert
+1) perform standard BST insertion and make the color of the newly inserted nodes as RED
+2) if x is root, change color of x as BLACK (Black height of complete tree increases by 1)
+3) Do following if color od x's parent is not BLACK nd x is not root
+    a) if x's uncle is RED
+        - Change color of parent and uncle as BLACK
+        - color of grandparent as RED
+        - change x =x's grandparent, repeat 2 & 3 for new x
+    b) if x's uncle is BLACK, then there can be four configurations for x, x's parent(p) and x's grandparent (g)
+        - left left case (p is the left child of g and x is the left child of p)
+        - left right case (p is left child of g and x is right child of p)
+        - right right case (mirror case 1)
+        - right left case (mirror case 2)
+
+Red/Black delete
+- The man violated property is, change of black height in subtrees as deletion of
+a black node may cause reduced black height in one root to leaf path
+
+- when a black node is deleted and replaced by a black child, the child is marked as double black
+
+## AVL Tree
+- A binary search tree in which the difference of heights of left and right subtrees of any node >= 1
+
+- Left T be a non-empty binary tree with Tl and Tr as its left and right subtrees.
+the tree is height balanced if:
+    - Tl and Tr are height balanced
+    - Hl - Hr <= 1, where hl - hr are the heights of Tl and Tr
+
+Advantages of AVL trees
+- insert/delete have have low time complexity
+
+## Tree Traversal
