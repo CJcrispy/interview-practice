@@ -249,3 +249,22 @@ Advantages of AVL trees
 - insert/delete have have low time complexity
 
 ## Tree Traversal
+
+###### Depth First Traversal (DFS)
+- algorithm traverses a graph in a depthward motion and uses a stack to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
+It employs the following rules.
+```
+Rule 1 − Visit the adjacent unvisited vertex. Mark it as visited. Display it. Push it in a stack.
+Rule 2 − If no adjacent vertex is found, pop up a vertex from the stack. (It will pop up all the vertices from the stack, which do not have adjacent vertices.)
+Rule 3 − Repeat Rule 1 and Rule 2 until the stack is empty.
+```
+
+###### Breadth First Traversal (BFS)
+- Breadth First Search (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
+It employs the following rules.
+```
+Rule 1 − Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it in a queue.
+Rule 2 − If no adjacent vertex is found, remove the first vertex from the queue.
+Rule 3 − Repeat Rule 1 and Rule 2 until the queue is empty.
+```
+
