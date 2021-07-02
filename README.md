@@ -259,6 +259,13 @@ Rule 2 − If no adjacent vertex is found, pop up a vertex from the stack. (It w
 Rule 3 − Repeat Rule 1 and Rule 2 until the stack is empty.
 ```
 
+Depth First Traversals:
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3 
+    - the left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.
+    - If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3 
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+
 ###### Breadth First Traversal (BFS)
 - Breadth First Search (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
 It employs the following rules.
@@ -268,3 +275,4 @@ Rule 2 − If no adjacent vertex is found, remove the first vertex from the queu
 Rule 3 − Repeat Rule 1 and Rule 2 until the queue is empty.
 ```
 
+Breadth First or Level Order Traversal : 1 2 3 4 5 
