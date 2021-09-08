@@ -1,7 +1,7 @@
 <table>
     <thead>
         <tr>
-            <th>Sorting Algorithm name  </th>
+            <th>Sorting Algorithm name</th>
             <th colspan=3>Time Complexity</th>
             <th>Space Complexity</th>
             <th>Stability?</th>

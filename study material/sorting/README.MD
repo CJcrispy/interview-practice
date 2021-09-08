@@ -101,6 +101,16 @@ Rearrange the elements in the array[p...r] that are <= pivot are to its left and
 ## Heap Sort
 
 
+###### Heap Sort Complexity
+```
+Time Complexity	 
+Best	O(nlog n)
+Worst	O(nlog n)
+Average	O(nlog n)
+Space Complexity	O(1)
+Stability	No
+```
+
 ## Bubble Sort
 Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are not in the intended order.
 
@@ -110,6 +120,19 @@ Bubble sort is a sorting algorithm that compares two adjacent elements and swaps
     2. If the first element is greater than the second element, they are swapped.
     3. Now, compare the second and the third elements. Swap them if they are not in order.
     4. The above process goes on until the last element
+
+2. Remaining Iteration
+The same process goes on for the remaining iterations. After each iteration, the largest element among the unsorted elements is placed at the end.
+
+###### Bubble Sort Complexity
+```
+Time Complexity	 
+Best	O(n)
+Worst	O(n2)
+Average	O(n2)
+Space Complexity	O(1)
+Stability	Yes
+```
 
 ## Tree Sort
 
