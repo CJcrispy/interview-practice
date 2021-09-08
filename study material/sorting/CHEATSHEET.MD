@@ -25,18 +25,20 @@ Markdown | Less | Pretty
 <table>
     <thead>
         <tr>
-            <th rowspan=2>Sorting Algorithm name  </th>
+            <th>Sorting Algorithm name  </th>
             <th colspan=3>Time Complexity</th>
             <th>Space Complexity</th>
-            <th rowspan=2>Stability?</th>
-            <th rowspan=42>Sorting Class Type</th>
+            <th>Stability?</th>
+            <th>Sorting Class Type</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>L1 Name</td>
-            <td>L2 Name A</td>
-            <td>L3 Name A</td>
+            <td></td>
+            <td>Best Case </td>
+            <td>Average Case </td>
+            <td>Worst Case </td>
+            <td>Worst Case </td>
         </tr>
         <tr>
             <td>L3 Name B</td>
