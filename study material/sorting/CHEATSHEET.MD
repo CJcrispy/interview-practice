@@ -35,13 +35,21 @@ Markdown | Less | Pretty
     <tbody>
         <tr>
             <td></td>
-            <td>Best Case </td>
-            <td>Average Case </td>
-            <td>Worst Case </td>
-            <td>Worst Case </td>
+            <td>Best Case</td>
+            <td>Average Case</td>
+            <td>Worst Case</td>
+            <td>Worst Case</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>L3 Name B</td>
+            <td>Bubble Sort</td>
+            <td>O(n)</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+            <td>Yes</td>
+            <td>Comparison</td>
         </tr>
         <tr>
             <td rowspan=2>L2 Name B</td>
