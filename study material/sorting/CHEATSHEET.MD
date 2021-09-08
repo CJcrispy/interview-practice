@@ -1,7 +1,9 @@
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |               | Tables        | Are           | Cool  |
-| ------------- |:-------------:|:-----:|:-------------:|:-------------:|:-------------:|------:|
+| Sorting Algorithm name        | Time Complexity           | Space Complexity    |    Stability?           | Sorting Class Type        |
+| ----------------------------- |:-------------------------:|:-------------------:|:-----------------------:|--------------------------:|
+| Sorting Algorithm name        | Best Case | Avg Case | worst case | worst case  |
+| ----------------------------- |:-------------------------:|:-------------------:|:-----------------------:|--------------------------:|
 | col 3 is      | right-aligned | $1600 |               | Tables        | Are           | Cool  |
 | col 2 is      | centered      |   $12 |               | Tables        | Are           | Cool  |
 | zebra stripes | are neat      |    $1 |               | Tables        | Are           | Cool  |
