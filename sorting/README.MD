@@ -99,6 +99,17 @@ Rearrange the elements in the array[p...r] that are <= pivot are to its left and
 
 
 ## Heap Sort
+Heap sort is a comparison-based sorting technique based on Binary Heap data structure.
+
+What is Binary Heap? 
+A Binary Heap is a Complete Binary Tree where items are stored in a special order such that the value in a parent node is greater(or smaller) than the values in its two children nodes
+
+###### Working of Heap Sort
+1. Since the tree satisfies Max-Heap property, then the largest item is stored at the root node.
+2. Swap: Remove the root element and put at the end of the array (nth position) Put the last item of the tree (heap) at the vacant place.
+3. Remove: Reduce the size of the heap by 1.
+4. Heapify: Heapify the root element again so that we have the highest element at root.
+5. The process is repeated until all the items of the list are sorted.
 
 
 ###### Heap Sort Complexity
