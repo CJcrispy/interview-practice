@@ -102,7 +102,14 @@ Rearrange the elements in the array[p...r] that are <= pivot are to its left and
 
 
 ## Bubble Sort
+Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are not in the intended order.
 
+###### sorting elements in ascending order
+1. First Iteration (Compare and Swap)
+    1. Starting from the first index, compare the first and the second elements.
+    2. If the first element is greater than the second element, they are swapped.
+    3. Now, compare the second and the third elements. Swap them if they are not in order.
+    4. The above process goes on until the last element
 
 ## Tree Sort
 
