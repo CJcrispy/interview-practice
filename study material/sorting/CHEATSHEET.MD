@@ -52,11 +52,85 @@ Markdown | Less | Pretty
             <td>Comparison</td>
         </tr>
         <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
+            <td>Insertion Sort</td>
+            <td>O(n)</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+            <td>Yes</td>
+            <td>Comparison</td>
         </tr>
         <tr>
-            <td>L3 Name D</td>
+            <td>Selection Sort</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+            <td>Yes</td>
+            <td>Comparison</td>
+        </tr>
+        <tr>
+            <td>Merge Sort</td>
+            <td>O(nlogn)</td>
+            <td>O(nlogn)</td>
+            <td>O(nlogn)</td>
+            <td>O(n)</td>
+            <td>Yes</td>
+            <td>Comparison</td>
+        </tr>
+        <tr>
+            <td>Heap Sort</td>
+            <td>O(nlogn)</td>
+            <td>O(nlogn)</td>
+            <td>O(nlogn)</td>
+            <td>O(1)</td>
+            <td>No</td>
+            <td>Comparison</td>
+        </tr>
+        <tr>
+            <td>Quick Sort</td>
+            <td>O(nlogn)</td>
+            <td>O(nlogn)</td>
+            <td>O(n^2)</td>
+            <td>O(logn)</td>
+            <td>No</td>
+            <td>Comparison</td>
+        </tr>
+        <tr>
+            <td>Tree Sort</td>
+            <td>O(nlogn)</td>
+            <td>O(nlogn)</td>
+            <td>O(n^2)</td>
+            <td>O(n)</td>
+            <td>Yes</td>
+            <td>Comparison</td>
+        </tr>
+        <tr>
+            <td>Counting Sort</td>
+            <td>O(n + k)</td>
+            <td>O(n + k)</td>
+            <td>O(n + k)</td>
+            <td>O(k)</td>
+            <td>Yes</td>
+            <td>Linear</td>
+        </tr>
+        <tr>
+            <td>Bucket Sort</td>
+            <td>O(n + k)</td>
+            <td>O(n + k)</td>
+            <td>O(n^2)</td>
+            <td>O(n)</td>
+            <td>Yes</td>
+            <td>Linear</td>
+        </tr>
+        <tr>
+            <td>Radix Sort</td>
+            <td>O(dn)</td>
+            <td>O(dn)</td>
+            <td>O(dn)</td>
+            <td>O(d + n)</td>
+            <td>Yes</td>
+            <td>Linear</td>
         </tr>
     </tbody>
 </table>
