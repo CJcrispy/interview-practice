@@ -26,7 +26,7 @@ Markdown | Less | Pretty
     <thead>
         <tr>
             <th rowspan=2>Sorting Algorithm name  </th>
-            <th>Time Complexity</th>
+            <th colspan=3>Time Complexity</th>
             <th>Space Complexity</th>
             <th rowspan=2>Stability?</th>
             <th rowspan=42>Sorting Class Type</th>
